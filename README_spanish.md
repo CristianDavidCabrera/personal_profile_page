@@ -28,7 +28,7 @@ Edite el valor href del enlace de Inicio para que navegue a index.html. Nota: no
 Siéntase libre de expandir este proyecto, agregando una o dos páginas adicionales, agregando más imágenes y personalizando el CSS.
 
 ## Historia de Usuario #7:
-If you do not want to add an additional page then delete the experience link in the HTML.
+Si no desea agregar una página adicional, elimine el enlace de experiencia en el HTML.
 
 ## Historia de Usuario #8:
 Con respecto a su repositorio de GitHub en su cuenta de GitHub:

@@ -29,7 +29,7 @@ a:hover {
 .main-nav {
   width: 100%;
   background: black;
-  min-height: 30px;
+  min-height: 40px;
   padding: 10px;
   position: fixed;
   text-align: center;
@@ -37,7 +37,7 @@ a:hover {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
@@ -64,11 +64,13 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/photo/rsz_ftv_cotillo.jpg') no-repeat top center;
+  background: url('images/photo/ftv_cotillo.jpg') no-repeat top center;
   /* Hay que modificarla. Pesa mucho. No puede pesar más de un 1MB*/
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 60px; 
+  min-height: 470px;
+  line-height: 1.5;
 }
 
 header {
@@ -85,7 +87,7 @@ header .profile-image {
 }
 
 header .profile-image:hover {
-  transform: scale(1.5) rotate(360deg);
+  transform: scale(1.2) rotate(360deg);
 }
 
 .tag {
@@ -105,7 +107,7 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: auto;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -117,22 +119,65 @@ header .profile-image:hover {
   border-color: #ff99ff;
 }
 
-ul.skills {
+ul.skills,
+ul.jobs {
   padding: 0;
   text-align: center;
 }
 
 .skills li {
+/*   border-radius: 6px; */
+  display: inline-block;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+li span {
+  visibility: hidden;
+}
+
+.jobs li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: rgb(204, 0, 204);
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
+
+.icon {
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 5px;
+  background-size: cover;
+}
+
+.icon__html {
+  background-image: url(images/skills_logo/html.png);
+}
+
+.icon__css {
+  background-image: url(images/skills_logo/css.png);
+}
+.icon__javascript {
+  background-image: url(images/skills_logo/javascript.png);
+}
+.icon__bootstrap {
+  background-image: url(images/skills_logo/bootstrap.svg);
+}
+.icon__sass {
+  background-image: url(images/skills_logo/rsz_sass.png);
+}
+.icon__angular {
+  background-image: url(images/skills_logo/angular.png);
+}
+.icon__react {
+  background-image: url(images/skills_logo/react.png);
+}
+.icon__java {
+  background-image: url(images/skills_logo/java.png);
 }
 
 footer {
@@ -167,58 +212,20 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/socialmedia_logo/linkedin.svg);
 }
 
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(images/socialmedia_logo/github.svg);
 }
 
 a.social:hover {
   opacity: 1;
 }
 
-.clearfix {
-  clear: both;
+#slogan {
+  font-size:2.5rem;
+  font-weight: bold;
 }
 
-/* Styles for larger screens */
-
-@media screen and (min-width: 720px) {
-  .flex {
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: flex;
-    max-width: 1200px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  header {
-    min-height: 470px;
-  }
-
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
-  main {
-    padding-top: 20px;
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-  
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-}
