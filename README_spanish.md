@@ -12,7 +12,7 @@ Cree o encuentre un archivo de imagen para representarse a sí mismo y una nueva
 
 ## Historia de Usuario #2:
 Usando un editor de texto, modifique el HTML del archivo index.html:
-- Agregue las imágenes que recolectó en el paso 1 a la página. Por favor, deje la clase "imagen-perfil" intacta en su imagen de perfil.
+- Agregue las imágenes que recolectó en el paso 1 a la página. Por favor, deje la clase "profile-image" intacta en su imagen de perfil.
 - ¡No olvide actualizar el texto para el atributo alt de su nueva imagen de perfil!
 
 ## Historia de Usuario #3:
