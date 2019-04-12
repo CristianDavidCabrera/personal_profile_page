@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.3rem;
+  font-size: 2.2vh;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
@@ -167,9 +167,10 @@ li span {
 }
 
 .jobs {
-  border-radius: 6px;
-  background: #222;
-  color: white;
+  border-radius: 4px;
+  background: grey;
+  border: solid 1px black;
+  color: black;
   padding: 0 5px ;
   margin: 0px;
 }
