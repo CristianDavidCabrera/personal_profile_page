@@ -142,12 +142,24 @@ ul.jobs {
 }
 
 .goals li {
+  border: solid 2px black;
   border-radius: 6px;
   display: inline-block;
-  background: #222;
-  color: white;
+  color: black;
   padding: 5px 10px;
   margin: 2px;
+}
+
+#html__goals {
+  background-color: #ff531a;
+}
+
+#css__goals {
+  background-color: #0066ff;
+}
+
+#javascript__goals {
+  background-color: #ffff00;
 }
 
 li span {
@@ -166,12 +178,6 @@ li span {
   list-style-type: none;
   display: table;
   margin: .5rem;
-}
-.other_jobs {
-  background-color: darkgrey;
-  color: black;
-  border: solid 2px black ;
-  border-radius: 6px;
 }
 
 /*ICONS Technical Skills*/
